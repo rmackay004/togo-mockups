@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToGo - Unified Clinical Workforce Platform Mockups</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 48px;
+        }
+
+        .logo {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .description {
+            font-size: 16px;
+            opacity: 0.85;
+            margin-top: 12px;
+            line-height: 1.6;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 32px;
+            text-decoration: none;
+            color: #1A1A1A;
+            transition: all 0.3s;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+        }
+
+        .card-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .card-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1A1A1A;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #6B7280;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .card-tag {
+            display: inline-block;
+            padding: 6px 12px;
+            background: #EEF2FF;
+            color: #667EEA;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            opacity: 0.85;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">ToGo</div>
+            <div class="subtitle">Unified Clinical Workforce Management Platform</div>
+            <div class="description">
+                Combining Med App, Core Schedule, and myhealthpd into one seamless experience.<br>
+                Powered by Verified Orchestration for secure identity management.
+            </div>
+        </div>
+
+        <div class="grid">
+            <a href="clinician-dashboard.html" class="card">
+                <div class="card-icon">👨‍⚕️</div>
+                <div class="card-title">Clinician Dashboard</div>
+                <div class="card-description">
+                    Complete view with shifts, learning progress, credentials, and communications. Classic sidebar navigation.
+                </div>
+                <span class="card-tag">Desktop View</span>
+            </a>
+
+            <a href="clinician-dashboard-alt.html" class="card">
+                <div class="card-icon">✨</div>
+                <div class="card-title">Clinician Dashboard (Alt)</div>
+                <div class="card-description">
+                    Modern variant with top navigation, hero section, and action-oriented design. Alternative layout approach.
+                </div>
+                <span class="card-tag">Desktop View</span>
+            </a>
+
+            <a href="admin-dashboard.html" class="card">
+                <div class="card-icon">📊</div>
+                <div class="card-title">Administrator Dashboard</div>
+                <div class="card-description">
+                    Hospital-wide oversight with KPIs, staff management, compliance alerts, and schedule coverage analytics.
+                </div>
+                <span class="card-tag">Desktop View</span>
+            </a>
+
+            <a href="mobile-view.html" class="card">
+                <div class="card-icon">📱</div>
+                <div class="card-title">Mobile Experience</div>
+                <div class="card-description">
+                    On-the-go clinician view optimized for mobile devices. Quick access to shifts, learning, and credentials.
+                </div>
+                <span class="card-tag">Mobile View</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            ToGo Investor Presentation Mockups • 2025
+        </div>
+    </div>
+</body>
+</html>
