@@ -844,6 +844,36 @@
                 </div>
             </header>
 
+            <!-- AI Agent Banner -->
+            <div style="background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%); border-radius: 16px; padding: 24px; margin-bottom: 32px; color: white; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: -50%; right: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);"></div>
+                <div style="position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center;">
+                    <div style="flex: 1;">
+                        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                            <div style="width: 48px; height: 48px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px;">🤖</div>
+                            <div>
+                                <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 4px;">AI Workforce Agent Active</h3>
+                                <p style="font-size: 14px; opacity: 0.95;">Automating 127 administrative tasks across your workforce today</p>
+                            </div>
+                        </div>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px;">
+                            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 14px;">
+                                <div style="font-size: 28px; font-weight: 700; margin-bottom: 4px;">45h</div>
+                                <div style="font-size: 13px; opacity: 0.9;">Admin time saved today</div>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 14px;">
+                                <div style="font-size: 28px; font-weight: 700; margin-bottom: 4px;">98%</div>
+                                <div style="font-size: 13px; opacity: 0.9;">Auto-completion accuracy</div>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 14px;">
+                                <div style="font-size: 28px; font-weight: 700; margin-bottom: 4px;">$12.4k</div>
+                                <div style="font-size: 13px; opacity: 0.9;">Labor cost savings</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- KPI Cards -->
             <div class="kpi-grid">
                 <div class="kpi-card">
@@ -853,7 +883,7 @@
                     </div>
                     <div class="kpi-value">247</div>
                     <div class="kpi-label">Active Staff</div>
-                    <div class="kpi-footer">12 new hires this month</div>
+                    <div class="kpi-footer">AI: Optimal staffing achieved</div>
                 </div>
 
                 <div class="kpi-card">
@@ -863,7 +893,7 @@
                     </div>
                     <div class="kpi-value">94%</div>
                     <div class="kpi-label">Compliance Rate</div>
-                    <div class="kpi-footer">15 staff need attention</div>
+                    <div class="kpi-footer">AI: 15 auto-renewals pending</div>
                 </div>
 
                 <div class="kpi-card">
@@ -873,7 +903,7 @@
                     </div>
                     <div class="kpi-value">96%</div>
                     <div class="kpi-label">Shift Coverage</div>
-                    <div class="kpi-footer">8 open shifts this week</div>
+                    <div class="kpi-footer">AI: 8 shifts auto-filled today</div>
                 </div>
 
                 <div class="kpi-card">
@@ -883,7 +913,7 @@
                     </div>
                     <div class="kpi-value">1,834</div>
                     <div class="kpi-label">CPD Hours (MTD)</div>
-                    <div class="kpi-footer">Target: 2,000 hours</div>
+                    <div class="kpi-footer">LMS: On track for 2,000hrs</div>
                 </div>
             </div>
 
@@ -990,11 +1020,20 @@
                     </div>
 
                     <div class="compliance-list">
+                        <!-- AI Auto-resolution Banner -->
+                        <div style="padding: 16px; background: linear-gradient(135deg, #D1FAE5 0%, #A7F3D0 100%); border: 1px solid #6EE7B7; border-radius: 12px; margin-bottom: 16px; display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 40px; height: 40px; background: #10B981; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px; color: white;">✨</div>
+                            <div style="flex: 1;">
+                                <div style="font-size: 14px; font-weight: 700; color: #065F46; margin-bottom: 2px;">AI Agent Auto-Resolved 12 Issues</div>
+                                <div style="font-size: 12px; color: #047857;">Certification renewals booked, CPD courses assigned, onboarding reminders sent</div>
+                            </div>
+                        </div>
+
                         <div class="compliance-item critical">
                             <div class="compliance-icon critical">🚨</div>
                             <div class="compliance-content">
-                                <div class="compliance-title">Urgent: Expiring Certifications</div>
-                                <div class="compliance-desc">5 staff members have certifications expiring within 14 days</div>
+                                <div class="compliance-title">Urgent: Expiring Certifications (AI Handling)</div>
+                                <div class="compliance-desc">5 staff members have certifications expiring within 14 days • AI has auto-booked renewal courses</div>
                                 <div class="compliance-staff">Dr. Chen, Dr. Patel, RN Williams, +2</div>
                             </div>
                             <button class="compliance-action">Review</button>
@@ -1003,18 +1042,18 @@
                         <div class="compliance-item warning">
                             <div class="compliance-icon warning">⚠️</div>
                             <div class="compliance-content">
-                                <div class="compliance-title">CPD Requirements Behind</div>
-                                <div class="compliance-desc">8 staff members below required CPD hours for Q4</div>
+                                <div class="compliance-title">CPD Requirements Behind (LMS Integrated)</div>
+                                <div class="compliance-desc">8 staff members below required CPD hours • AI assigned personalized learning paths via myhealthPD</div>
                                 <div class="compliance-staff">Dr. Martinez, RN Johnson, +6</div>
                             </div>
-                            <button class="compliance-action">Notify</button>
+                            <button class="compliance-action">View Plans</button>
                         </div>
 
                         <div class="compliance-item warning">
                             <div class="compliance-icon warning">📋</div>
                             <div class="compliance-content">
-                                <div class="compliance-title">Incomplete Onboarding</div>
-                                <div class="compliance-desc">3 new hires haven't completed mandatory training</div>
+                                <div class="compliance-title">Incomplete Onboarding (Auto-Nudge Sent)</div>
+                                <div class="compliance-desc">3 new hires haven't completed mandatory training • AI sent personalized reminders 2 hours ago</div>
                                 <div class="compliance-staff">Dr. Brown, RN Taylor, PA Smith</div>
                             </div>
                             <button class="compliance-action">Follow Up</button>
@@ -1023,11 +1062,11 @@
                         <div class="compliance-item warning">
                             <div class="compliance-icon warning">🔐</div>
                             <div class="compliance-content">
-                                <div class="compliance-title">Credential Verification Pending</div>
-                                <div class="compliance-desc">2 staff awaiting identity verification from Verified Orchestration</div>
+                                <div class="compliance-title">Credential Verification (Verified Orchestration)</div>
+                                <div class="compliance-desc">2 staff awaiting identity verification • Automated follow-up with VO initiated</div>
                                 <div class="compliance-staff">Dr. Anderson, RN Wilson</div>
                             </div>
-                            <button class="compliance-action">Check Status</button>
+                            <button class="compliance-action">VO Status</button>
                         </div>
                     </div>
                 </div>
