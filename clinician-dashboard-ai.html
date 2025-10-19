@@ -1100,43 +1100,125 @@
                 </div>
             </header>
 
-            <!-- AI Agent Assistant -->
+            <!-- Multi-Agent Orchestration Panel -->
             <div class="ai-agent-card">
                 <div class="ai-agent-header">
                     <div class="ai-agent-icon">🤖</div>
                     <div class="ai-agent-title">
-                        <h3>Your AI Agent Completed 4 Tasks Today</h3>
-                        <p>Saving you an estimated 2.5 hours of administrative work</p>
+                        <h3>Multi-Agent System: 7 Agents Working for You</h3>
+                        <p>Autonomous, human-in-the-loop, and human-on-the-loop workflows coordinated seamlessly</p>
                     </div>
                 </div>
-                <div class="ai-suggestions">
-                    <div class="ai-suggestion">
-                        <div class="ai-suggestion-header">
-                            <span class="ai-suggestion-icon">📋</span>
-                            <span class="ai-suggestion-title">Pre-shift Briefing Ready</span>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; position: relative; z-index: 1;">
+                    <!-- Autonomous Agents -->
+                    <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 16px;">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                            <div style="width: 32px; height: 32px; background: #10B981; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px;">✓</div>
+                            <div style="font-size: 14px; font-weight: 700;">Autonomous Agents</div>
                         </div>
-                        <div class="ai-suggestion-desc">Patient handovers and priority cases compiled from EMR</div>
+                        <div style="font-size: 12px; opacity: 0.95; margin-bottom: 10px;">No human intervention needed</div>
+                        <div style="display: flex; flex-direction: column; gap: 6px; font-size: 11px;">
+                            <div style="padding: 6px; background: rgba(255,255,255,0.1); border-radius: 6px;">⏰ Timesheet Agent: Auto-submitted 38.5h</div>
+                            <div style="padding: 6px; background: rgba(255,255,255,0.1); border-radius: 6px;">📄 Documentation Agent: Filed 12 notes</div>
+                            <div style="padding: 6px; background: rgba(255,255,255,0.1); border-radius: 6px;">🔔 Reminder Agent: 3 notifications sent</div>
+                        </div>
                     </div>
-                    <div class="ai-suggestion">
-                        <div class="ai-suggestion-header">
-                            <span class="ai-suggestion-icon">📄</span>
-                            <span class="ai-suggestion-title">Clinical Notes Auto-Saved</span>
+
+                    <!-- Human-in-the-Loop -->
+                    <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 16px;">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                            <div style="width: 32px; height: 32px; background: #F59E0B; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px;">👤</div>
+                            <div style="font-size: 14px; font-weight: 700;">Human-in-the-Loop</div>
                         </div>
-                        <div class="ai-suggestion-desc">Last shift documentation completed and filed</div>
+                        <div style="font-size: 12px; opacity: 0.95; margin-bottom: 10px;">Requires your approval</div>
+                        <div style="display: flex; flex-direction: column; gap: 6px; font-size: 11px;">
+                            <div style="padding: 6px; background: rgba(255,255,255,0.1); border-radius: 6px;">🔄 Shift Swap Agent: 1 pending review</div>
+                            <div style="padding: 6px; background: rgba(255,255,255,0.1); border-radius: 6px;">🎓 CPD Agent: Course recommendation</div>
+                            <div style="padding: 6px; background: rgba(255,255,255,0.1); border-radius: 6px;">📅 Leave Agent: Auto-drafted request</div>
+                        </div>
                     </div>
-                    <div class="ai-suggestion">
-                        <div class="ai-suggestion-header">
-                            <span class="ai-suggestion-icon">🎓</span>
-                            <span class="ai-suggestion-title">CPD Match Found</span>
+
+                    <!-- Human-on-the-Loop -->
+                    <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 16px;">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                            <div style="width: 32px; height: 32px; background: #667EEA; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px;">👁️</div>
+                            <div style="font-size: 14px; font-weight: 700;">Human-on-the-Loop</div>
                         </div>
-                        <div class="ai-suggestion-desc">Based on your recent trauma cases, suggested: ATLS Advanced</div>
+                        <div style="font-size: 12px; opacity: 0.95; margin-bottom: 10px;">Agent acts, you monitor</div>
+                        <div style="display: flex; flex-direction: column; gap: 6px; font-size: 11px;">
+                            <div style="padding: 6px; background: rgba(255,255,255,0.1); border-radius: 6px;">🔐 Credential Agent: Monitoring renewals</div>
+                            <div style="padding: 6px; background: rgba(255,255,255,0.1); border-radius: 6px;">📊 Compliance Agent: Tracking CPD</div>
+                            <div style="padding: 6px; background: rgba(255,255,255,0.1); border-radius: 6px;">🏥 EMR Agent: Daily briefings ready</div>
+                        </div>
                     </div>
-                    <div class="ai-suggestion">
-                        <div class="ai-suggestion-header">
-                            <span class="ai-suggestion-icon">📅</span>
-                            <span class="ai-suggestion-title">Schedule Optimized</span>
+                </div>
+            </div>
+
+            <!-- Agent Activity Feed -->
+            <div style="background: white; border-radius: 16px; border: 1px solid #E5E7EB; padding: 24px; margin-bottom: 24px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <h3 style="font-size: 18px; font-weight: 700; color: #1A1A1A; display: flex; align-items: center; gap: 8px;">
+                        Agent Activity Feed
+                        <span style="font-size: 10px; padding: 4px 8px; background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%); color: #4338CA; border-radius: 6px; font-weight: 700;">LIVE</span>
+                    </h3>
+                    <a href="#" style="color: #667EEA; font-size: 13px; font-weight: 600; text-decoration: none;">View All Activity</a>
+                </div>
+
+                <!-- Agent Action Items -->
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <!-- Autonomous Action -->
+                    <div style="display: flex; gap: 12px; padding: 14px; background: #F0FDF4; border-left: 3px solid #10B981; border-radius: 8px;">
+                        <div style="width: 40px; height: 40px; background: #10B981; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; color: white;">✓</div>
+                        <div style="flex: 1;">
+                            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+                                <div style="font-size: 14px; font-weight: 700; color: #065F46;">Timesheet Agent (Autonomous)</div>
+                                <div style="font-size: 12px; color: #6B7280;">2 min ago</div>
+                            </div>
+                            <div style="font-size: 13px; color: #047857; margin-bottom: 6px;">Automatically submitted your timesheet for week ending Oct 13 with 38.5 hours logged</div>
+                            <div style="font-size: 11px; padding: 4px 8px; background: white; border-radius: 6px; display: inline-block; color: #065F46; font-weight: 600;">✓ Completed • No action needed</div>
                         </div>
-                        <div class="ai-suggestion-desc">Shift patterns adjusted to reduce fatigue risk by 32%</div>
+                    </div>
+
+                    <!-- Human-in-the-Loop Action -->
+                    <div style="display: flex; gap: 12px; padding: 14px; background: #FFFBEB; border-left: 3px solid #F59E0B; border-radius: 8px;">
+                        <div style="width: 40px; height: 40px; background: #F59E0B; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; color: white;">👤</div>
+                        <div style="flex: 1;">
+                            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+                                <div style="font-size: 14px; font-weight: 700; color: #92400E;">Shift Swap Agent (Human-in-Loop)</div>
+                                <div style="font-size: 12px; color: #6B7280;">15 min ago</div>
+                            </div>
+                            <div style="font-size: 13px; color: #78350F; margin-bottom: 8px;">Dr. Patel requested to swap your Oct 21 night shift. Agent verified both credentials and compliance. Awaiting your approval.</div>
+                            <div style="display: flex; gap: 8px;">
+                                <button style="padding: 6px 14px; background: #F59E0B; color: white; border: none; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer;">Approve Swap</button>
+                                <button style="padding: 6px 14px; background: white; color: #92400E; border: 1px solid #F59E0B; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer;">Decline</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Human-on-the-Loop Action -->
+                    <div style="display: flex; gap: 12px; padding: 14px; background: #EEF2FF; border-left: 3px solid #667EEA; border-radius: 8px;">
+                        <div style="width: 40px; height: 40px; background: #667EEA; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; color: white;">👁️</div>
+                        <div style="flex: 1;">
+                            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+                                <div style="font-size: 14px; font-weight: 700; color: #4338CA;">Credential Monitoring Agent (Human-on-Loop)</div>
+                                <div style="font-size: 12px; color: #6B7280;">1 hour ago</div>
+                            </div>
+                            <div style="font-size: 13px; color: #4F46E5; margin-bottom: 6px;">Auto-booked your ACLS renewal course for Oct 28, 9:00 AM. Calendar invitation sent, reminder set for 24h before.</div>
+                            <div style="font-size: 11px; padding: 4px 8px; background: white; border-radius: 6px; display: inline-block; color: #4338CA; font-weight: 600;">ℹ️ FYI • Agent monitoring progress</div>
+                        </div>
+                    </div>
+
+                    <!-- Multi-Agent Collaboration -->
+                    <div style="display: flex; gap: 12px; padding: 14px; background: #F5F3FF; border-left: 3px solid #A78BFA; border-radius: 8px;">
+                        <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; color: white;">🔗</div>
+                        <div style="flex: 1;">
+                            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+                                <div style="font-size: 14px; font-weight: 700; color: #6D28D9;">Multi-Agent Collaboration</div>
+                                <div style="font-size: 12px; color: #6B7280;">3 hours ago</div>
+                            </div>
+                            <div style="font-size: 13px; color: #7C3AED; margin-bottom: 6px;">EMR Agent + Learning Agent worked together: Analyzed your 4 geriatric trauma cases from last week and recommended "Geriatric Trauma Assessment" course via myhealthPD LMS.</div>
+                            <div style="font-size: 11px; padding: 4px 8px; background: white; border-radius: 6px; display: inline-block; color: #6D28D9; font-weight: 600;">🤝 3 agents coordinated</div>
+                        </div>
                     </div>
                 </div>
             </div>
