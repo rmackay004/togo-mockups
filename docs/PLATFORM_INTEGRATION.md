@@ -1,8 +1,8 @@
-# ToGo Platform Integration Guide
+# Togo Health Platform Integration Guide
 
 ## Overview
 
-ToGo is a unified clinical workforce management platform that consolidates three distinct healthcare workforce solutions while adding AI-powered automation and orchestration capabilities. This document details how the integrated systems work together and the technical integration points.
+Togo Health is a unified clinical workforce management platform that consolidates three distinct healthcare workforce solutions while adding AI-powered automation and orchestration capabilities. This document details how the integrated systems work together and the technical integration points.
 
 ---
 
@@ -18,7 +18,7 @@ ToGo is a unified clinical workforce management platform that consolidates three
 - Internal messaging and announcements
 - Document distribution
 
-**Integration Points in ToGo**:
+**Integration Points in Togo Health**:
 
 **Clinician Dashboard**:
 - **Messages Widget**: Displays Med App communications inbox
@@ -48,7 +48,7 @@ ToGo is a unified clinical workforce management platform that consolidates three
 
 **Technical Integration**:
 ```
-Med App API → ToGo Integration Layer
+Med App API → Togo Health Integration Layer
 ├── RESTful API (JSON)
 ├── Webhook notifications for real-time updates
 ├── OAuth 2.0 authentication
@@ -67,7 +67,7 @@ Med App API → ToGo Integration Layer
 - Schedule templates
 - Overtime calculation
 
-**Integration Points in ToGo**:
+**Integration Points in Togo Health**:
 
 **Clinician Dashboard**:
 - **Upcoming Shifts Widget**: Core Schedule data display
@@ -99,7 +99,7 @@ Med App API → ToGo Integration Layer
 
 **Technical Integration**:
 ```
-Core Schedule API → ToGo Integration Layer
+Core Schedule API → Togo Health Integration Layer
 ├── RESTful API (JSON)
 ├── Real-time shift updates via WebSocket
 ├── iCal feed for calendar integrations
@@ -120,7 +120,7 @@ Core Schedule API → ToGo Integration Layer
 - Learning pathway recommendations
 - CE credit tracking
 
-**Integration Points in ToGo**:
+**Integration Points in Togo Health**:
 
 **Clinician Dashboard**:
 - **Learning Progress Widget**: myhealthPD course data
@@ -151,7 +151,7 @@ Core Schedule API → ToGo Integration Layer
 
 **Technical Integration**:
 ```
-myhealthPD API → ToGo Integration Layer
+myhealthPD API → Togo Health Integration Layer
 ├── LTI 1.3 (Learning Tools Interoperability)
 ├── xAPI (Experience API) for learning records
 ├── RESTful API for course catalog
@@ -173,7 +173,7 @@ myhealthPD API → ToGo Integration Layer
 - Blockchain-based credential ledger
 - Regulatory database integration
 
-**Integration Points in ToGo**:
+**Integration Points in Togo Health**:
 
 **Authentication & Authorization**:
 - **Login**: Verified Orchestration SSO
@@ -208,7 +208,7 @@ myhealthPD API → ToGo Integration Layer
 
 **Technical Integration**:
 ```
-Verified Orchestration Platform → ToGo
+Verified Orchestration Platform → Togo Health
 ├── OpenID Connect (OIDC) for authentication
 ├── SAML 2.0 for enterprise SSO
 ├── WebAuthn for passwordless/biometric
@@ -229,7 +229,7 @@ Verified Orchestration Platform → ToGo
 - Meditech
 - Allscripts
 
-**Integration Points in ToGo**:
+**Integration Points in Togo Health**:
 
 **Clinician Dashboard - AI-Powered EMR Briefing**:
 - **Pre-Shift Patient Overview**:
@@ -269,7 +269,7 @@ Verified Orchestration Platform → ToGo
 
 **Technical Integration**:
 ```
-Hospital EMR System → ToGo Integration Layer
+Hospital EMR System → Togo Health Integration Layer
 ├── FHIR R4 API (Fast Healthcare Interoperability Resources)
 ├── HL7 v2 messages for real-time ADT (Admit/Discharge/Transfer)
 ├── CDA (Clinical Document Architecture) for care summaries
@@ -325,11 +325,11 @@ User Action / Scheduled Event
 ### Integration Data Sync
 
 **Real-Time Events** (WebSocket/Webhook):
-- Shift assignments (Core Schedule → ToGo)
-- New messages (Med App → ToGo)
-- Course enrollments (myhealthPD → ToGo)
-- Credential updates (Verified Orchestration → ToGo)
-- Patient assignments (EMR → ToGo)
+- Shift assignments (Core Schedule → Togo Health)
+- New messages (Med App → Togo Health)
+- Course enrollments (myhealthPD → Togo Health)
+- Credential updates (Verified Orchestration → Togo Health)
+- Patient assignments (EMR → Togo Health)
 
 **Batch Sync** (Scheduled API calls):
 - Historical timesheet data (Core Schedule)
@@ -346,7 +346,7 @@ User Action / Scheduled Event
 
 ## API Architecture
 
-### ToGo Integration Layer
+### Togo Health Integration Layer
 
 **Design Pattern**: API Gateway with microservices
 
@@ -393,7 +393,7 @@ External Systems → API Gateway → Microservices
 
 ## Database Architecture
 
-### ToGo Unified Data Model
+### Togo Health Unified Data Model
 
 **Primary Database**: PostgreSQL (relational data)
 **Cache Layer**: Redis (session data, rate limiting)
@@ -460,7 +460,7 @@ CREATE TABLE agent_activities (
 
 **1. Event-Driven Sync** (preferred):
 - Webhook listeners for Med App, Core Schedule, myhealthPD
-- Immediate updates to ToGo database
+- Immediate updates to Togo Health database
 - Conflict resolution via timestamp comparison
 
 **2. Polling Sync** (fallback):
@@ -472,7 +472,7 @@ CREATE TABLE agent_activities (
 - Staff records: Med App is source of truth
 - Shifts: Core Schedule is source of truth
 - Learning: myhealthPD is source of truth
-- ToGo maintains read replicas with enrichment (agent actions, preferences)
+- Togo Health maintains read replicas with enrichment (agent actions, preferences)
 
 ---
 
@@ -570,4 +570,4 @@ CloudFront (CDN) → ALB (Load Balancer) → ECS (Containers)
 
 ---
 
-This integration architecture demonstrates how ToGo unifies disparate healthcare workforce systems into a cohesive platform while adding AI-powered automation that respects clinical workflows and regulatory requirements.
+This integration architecture demonstrates how Togo Health unifies disparate healthcare workforce systems into a cohesive platform while adding AI-powered automation that respects clinical workflows and regulatory requirements.

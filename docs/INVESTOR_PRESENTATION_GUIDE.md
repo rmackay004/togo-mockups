@@ -1,8 +1,8 @@
-# ToGo Investor Presentation Guide
+# Togo Health Investor Presentation Guide
 
 ## Overview
 
-This guide helps you effectively present the ToGo mockups to investors, highlighting the platform's unique value proposition, market opportunity, and technical differentiation.
+This guide helps you effectively present the Togo Health mockups to investors, highlighting the platform's unique value proposition, market opportunity, and technical differentiation.
 
 ---
 
@@ -11,7 +11,7 @@ This guide helps you effectively present the ToGo mockups to investors, highligh
 ### 1. Start with the Landing Page (index.html)
 
 **Opening Message**:
-"ToGo is solving a $10 billion problem in healthcare workforce management. We're unifying three proven platforms—Med App for onboarding, Core Schedule for rostering, and myhealthPD for learning—and adding AI-powered automation that gives clinicians back 12.5 hours per month."
+"Togo Health is solving a $10 billion problem in healthcare workforce management. We're unifying three proven platforms—Med App for onboarding, Core Schedule for rostering, and myhealthPD for learning—and adding AI-powered automation that gives clinicians back 12.5 hours per month."
 
 **Key Points to Emphasize**:
 - ✓ **Market Validation**: Three established companies with existing customer bases
@@ -32,7 +32,7 @@ This guide helps you effectively present the ToGo mockups to investors, highligh
 This is your "wow" moment. It demonstrates the most advanced capabilities and addresses the biggest pain point in healthcare: clinician burnout from administrative tasks.
 
 **Opening Statement**:
-"Here's what ToGo looks like for a nurse starting their day. Notice the AI Agent card at the top—seven specialized agents are already working on their behalf."
+"Here's what Togo Health looks like for a nurse starting their day. Notice the AI Agent card at the top—seven specialized agents are already working on their behalf."
 
 #### Section-by-Section Walkthrough
 
@@ -69,7 +69,7 @@ This is your "wow" moment. It demonstrates the most advanced capabilities and ad
 **C. Wellbeing Impact Metrics**
 
 **What to Say**:
-"This is where ToGo gets really interesting. We're not just tracking efficiency—we're measuring the impact on clinician wellbeing. 28% reduction in burnout scores. 45 extra minutes per shift for patient care instead of paperwork."
+"This is where Togo Health gets really interesting. We're not just tracking efficiency—we're measuring the impact on clinician wellbeing. 28% reduction in burnout scores. 45 extra minutes per shift for patient care instead of paperwork."
 
 **Visual Highlights**:
 - Point to the four metric cards with specific numbers
@@ -119,7 +119,7 @@ This is your "wow" moment. It demonstrates the most advanced capabilities and ad
 "That's the clinician experience. Now let's look at what hospital administrators see."
 
 **Opening Statement**:
-"Administrators manage hundreds of staff members. ToGo gives them a 15-agent fleet that handles workforce optimization, compliance monitoring, and cost management automatically."
+"Administrators manage hundreds of staff members. Togo Health gives them a 15-agent fleet that handles workforce optimization, compliance monitoring, and cost management automatically."
 
 #### Key Elements to Highlight
 
@@ -176,7 +176,7 @@ This is your "wow" moment. It demonstrates the most advanced capabilities and ad
 "Clinicians don't sit at desks. They need this on their phones."
 
 **Opening Statement**:
-"Here's the ToGo mobile app. Same AI agents, optimized for on-the-go access."
+"Here's the Togo Health mobile app. Same AI agents, optimized for on-the-go access."
 
 **Key Points**:
 - ✓ iPhone mockup shows realistic device context
@@ -216,7 +216,7 @@ This is your "wow" moment. It demonstrates the most advanced capabilities and ad
 - Hospital labor costs are 50-60% of operating budgets
 - Fragmented software landscape: hospitals use 5-10 different workforce tools
 
-**ToGo's Solution**:
+**Togo Health's Solution**:
 - Unified platform replaces fragmented tools
 - AI agents automate 70% of repetitive tasks
 - Measurable impact on clinician wellbeing and retention
@@ -282,7 +282,7 @@ LTV:CAC Ratio: 15:1
 ### 4. Go-to-Market Strategy
 
 **Phase 1: Existing Customer Consolidation** (Months 1-6):
-- Migrate Med App, Core Schedule, myhealthPD customers to unified ToGo platform
+- Migrate Med App, Core Schedule, myhealthPD customers to unified Togo Health platform
 - Immediate revenue base from existing subscriptions
 - Upsell AI agent capabilities to current customers
 
@@ -424,10 +424,10 @@ This is enterprise B2B healthcare, not consumer SaaS. The CAC and sales cycle ju
 **Q: "What's the revenue split from the three integrated companies?"**
 
 A: "Structure is TBD, but envision:
-- **Equity stake**: Med App, Core Schedule, myhealthPD each get equity in ToGo (5-10% depending on revenue contribution)
+- **Equity stake**: Med App, Core Schedule, myhealthPD each get equity in Togo Health (5-10% depending on revenue contribution)
 - **Revenue share**: They continue to earn revenue from their existing customer base on their legacy platforms
-- **Transition incentive**: Bonus for successful customer migrations to unified ToGo platform
-- **Unified pricing**: ToGo bundles all three + AI for one price, we distribute revenue internally
+- **Transition incentive**: Bonus for successful customer migrations to unified Togo Health platform
+- **Unified pricing**: Togo Health bundles all three + AI for one price, we distribute revenue internally
 
 This aligns everyone on building the best unified product."
 
@@ -477,7 +477,7 @@ Assumes:
 
 ### Closing Statement:
 
-"ToGo is the clinical workforce platform built for the AI era. We're giving clinicians back their time, giving hospitals measurable ROI, and building a defensible multi-agent orchestration platform that scales across the entire US healthcare system. We're raising $15M to make this vision reality. Let's talk about how you can be part of solving one of healthcare's biggest problems."
+"Togo Health is the clinical workforce platform built for the AI era. We're giving clinicians back their time, giving hospitals measurable ROI, and building a defensible multi-agent orchestration platform that scales across the entire US healthcare system. We're raising $15M to make this vision reality. Let's talk about how you can be part of solving one of healthcare's biggest problems."
 
 ---
 
@@ -490,7 +490,7 @@ Assumes:
 
 **[2:00-3:00] Solution Overview**
 - Show landing page (index.html)
-- ToGo unifies Med App + Core Schedule + myhealthPD
+- Togo Health unifies Med App + Core Schedule + myhealthPD
 - AI agents automate 70% of repetitive tasks
 
 **[3:00-8:00] Clinician Dashboard Deep Dive**

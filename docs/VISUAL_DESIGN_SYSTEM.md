@@ -1,8 +1,8 @@
-# ToGo Visual Design System
+# Togo Health Visual Design System
 
 ## Overview
 
-The ToGo platform employs a modern, professional design system that balances clinical professionalism with approachability. The visual language is designed to reduce cognitive load for busy healthcare professionals while maintaining investor appeal.
+The Togo Health platform employs a modern, professional design system that balances clinical professionalism with approachability. The visual language is designed to reduce cognitive load for busy healthcare professionals while maintaining investor appeal.
 
 ---
 
@@ -131,7 +131,7 @@ Inter is a modern, highly legible sans-serif optimized for digital interfaces. I
 
 ## Spacing System
 
-ToGo uses an 8-point grid system for consistent spacing:
+Togo Health uses an 8-point grid system for consistent spacing:
 
 - **4px**: Tight spacing (icon padding, small gaps)
 - **8px**: Compact spacing (form field gaps, icon-text spacing)
@@ -558,7 +558,7 @@ Minimum touch target size: **44px × 44px** (Apple HIG standard)
 
 ### Logo Lockup
 
-**ToGo Wordmark**
+**Togo Health Wordmark**
 - Font: Inter Bold (700)
 - Size: 56px (hero), 32px (nav), 24px (compact)
 - Letter spacing: -1px (hero), -0.5px (nav)

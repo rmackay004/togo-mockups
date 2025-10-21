@@ -1,8 +1,8 @@
-# Multi-Agent Workflows in ToGo
+# Multi-Agent Workflows in Togo Health
 
 ## Overview
 
-ToGo leverages a sophisticated multi-agent architecture to automate administrative tasks, reduce clinician burnout, and optimize hospital workforce management. The system employs three distinct workflow patterns, each designed for different levels of human oversight and intervention.
+Togo Health leverages a sophisticated multi-agent architecture to automate administrative tasks, reduce clinician burnout, and optimize hospital workforce management. The system employs three distinct workflow patterns, each designed for different levels of human oversight and intervention.
 
 ---
 
@@ -127,7 +127,7 @@ ToGo leverages a sophisticated multi-agent architecture to automate administrati
 
 ### Coordination Between Agents
 
-ToGo's agents don't operate in isolation—they collaborate and share context:
+Togo Health's agents don't operate in isolation—they collaborate and share context:
 
 **Example: New Shift Assignment Cascade**
 1. **Schedule Optimization Agent** assigns clinician to new shift (Human-on-the-Loop)
@@ -183,7 +183,7 @@ The **Orchestrator Agent** serves as the "conductor" of the multi-agent system:
 - Human accountability maintained for all clinical decisions
 
 ### Verified Orchestration Partnership
-ToGo integrates with **Verified Orchestration** for:
+Togo Health integrates with **Verified Orchestration** for:
 - Multi-factor authentication (MFA) for sensitive agent approvals
 - Biometric verification for high-stakes decisions
 - Cross-organizational identity federation
@@ -249,4 +249,4 @@ Review the **Administrator Dashboard** to understand:
 
 ## Support & Feedback
 
-As this is an investor-facing mockup, the workflows demonstrated represent the vision for ToGo's multi-agent capabilities. The system is designed to scale from single hospitals to large healthcare networks while maintaining the human oversight necessary for clinical excellence and regulatory compliance.
+As this is an investor-facing mockup, the workflows demonstrated represent the vision for Togo Health's multi-agent capabilities. The system is designed to scale from single hospitals to large healthcare networks while maintaining the human oversight necessary for clinical excellence and regulatory compliance.

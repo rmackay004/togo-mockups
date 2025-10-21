@@ -1,14 +1,14 @@
-# ToGo - Unified Clinical Workforce Platform
+# Togo Health - Unified Clinical Workforce Platform
 
 > High-fidelity investor presentation mockups demonstrating AI-powered healthcare workforce management
 
-![ToGo Platform](https://img.shields.io/badge/Status-Mockup-blue) ![AI Powered](https://img.shields.io/badge/AI-Multi--Agent-purple) ![Healthcare](https://img.shields.io/badge/Industry-Healthcare-green)
+![Togo Health Platform](https://img.shields.io/badge/Status-Mockup-blue) ![AI Powered](https://img.shields.io/badge/AI-Multi--Agent-purple) ![Healthcare](https://img.shields.io/badge/Industry-Healthcare-green)
 
 ---
 
 ## Overview
 
-**ToGo** is a unified clinical workforce management platform that consolidates three proven healthcare solutions into one seamless experience, enhanced with sophisticated AI-powered multi-agent orchestration.
+**Togo Health** is a unified clinical workforce management platform that consolidates three proven healthcare solutions into one seamless experience, enhanced with sophisticated AI-powered multi-agent orchestration.
 
 ### The Vision
 
@@ -45,6 +45,8 @@ The flagship demonstration showcasing:
 | **Admin Dashboard** | 15-agent fleet managing 247 staff members with cost optimization | [View](admin-dashboard.html) |
 | **Mobile Experience** | iPhone-optimized view with AI assistant on-the-go | [View](mobile-view.html) |
 | **Clinician Dashboard (Alt)** | Modern top-nav layout with hero section | [View](clinician-dashboard-alt.html) |
+| **AI Companion Clinician** | User-friendly version using "assistants" instead of "agents" | [View](clinician-dashboard-companion.html) |
+| **AI Companion Admin** | Administrator view with friendly companion terminology | [View](admin-dashboard-companion.html) |
 
 ### Landing Page
 [**Start Here →**](index.html) - Overview of all mockup options
@@ -365,19 +367,21 @@ Even desktop views consider the reality of clinicians accessing data on-the-go.
 
 ```
 togo/
-├── index.html                          # Landing page with navigation to all mockups
-├── clinician-dashboard-ai.html         # Featured AI-powered clinician view
-├── clinician-dashboard.html            # Classic clinician dashboard (baseline)
-├── clinician-dashboard-alt.html        # Alternative layout exploration
-├── admin-dashboard.html                # Administrator workforce management view
-├── mobile-view.html                    # iPhone-optimized mobile experience
+├── index.html                            # Landing page with navigation to all mockups
+├── clinician-dashboard-ai.html           # Featured AI-powered clinician view (technical)
+├── clinician-dashboard-companion.html    # AI companion clinician view (user-friendly)
+├── clinician-dashboard.html              # Classic clinician dashboard (baseline)
+├── clinician-dashboard-alt.html          # Alternative layout exploration
+├── admin-dashboard.html                  # Administrator workforce management view (technical)
+├── admin-dashboard-companion.html        # AI companion admin view (user-friendly)
+├── mobile-view.html                      # iPhone-optimized mobile experience
 ├── docs/
-│   ├── MULTI_AGENT_WORKFLOWS.md        # Agent architecture and workflow patterns
-│   ├── VISUAL_DESIGN_SYSTEM.md         # Design system and UI components
-│   ├── PLATFORM_INTEGRATION.md         # Integration architecture and API design
-│   └── INVESTOR_PRESENTATION_GUIDE.md  # Presentation flow and talking points
-├── .gitignore                          # Git ignore rules
-└── README.md                           # This file
+│   ├── MULTI_AGENT_WORKFLOWS.md          # Agent architecture and workflow patterns
+│   ├── VISUAL_DESIGN_SYSTEM.md           # Design system and UI components
+│   ├── PLATFORM_INTEGRATION.md           # Integration architecture and API design
+│   └── INVESTOR_PRESENTATION_GUIDE.md    # Presentation flow and talking points
+├── .gitignore                            # Git ignore rules
+└── README.md                             # This file
 ```
 
 ---
@@ -430,7 +434,7 @@ To build the actual platform, the development roadmap includes:
 
 ## License
 
-This project contains investor presentation mockups for ToGo. All rights reserved.
+This project contains investor presentation mockups for Togo Health. All rights reserved.
 
 For inquiries: [Contact information placeholder]
 
@@ -465,4 +469,4 @@ For investor inquiries, partnership opportunities, or demo requests:
 
 ---
 
-**ToGo**: Giving healthcare workers back their time, one automated task at a time.
+**Togo Health**: Giving healthcare workers back their time, one automated task at a time.
