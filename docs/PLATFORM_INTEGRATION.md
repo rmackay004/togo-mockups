@@ -161,6 +161,105 @@ myhealthPD API → Togo Health Integration Layer
 
 ---
 
+### 4. Time Filer - Payroll & Award Compliance
+
+**Core Functionality**:
+- Timesheet management and approval
+- Award interpretation and compliance
+- Leave and absence tracking
+- Roster planning integration
+- Payroll system integration
+- Award-specific rate calculations
+- Public holiday and penalty rate management
+- Leave entitlements and accruals
+
+**Integration Points in Togo Health**:
+
+**Clinician Dashboard**:
+- **Timesheet Auto-Submit**: Automated payroll processing
+  - AI agents submit timesheets directly to Time Filer
+  - Award compliance verified automatically
+  - Hours tracked from Core Schedule shifts
+  - Leave accruals calculated in real-time
+- **Payslip Access**: View payment details
+  - Award rates breakdown
+  - Overtime and penalty rates
+  - Leave balance and accruals
+  - Superannuation contributions
+
+**Admin Dashboard**:
+- **Payroll Integration Banner**: 247 staff timesheets automated
+  - Award rates auto-applied
+  - Leave entitlements calculated
+  - Payroll export ready
+- **Workforce Cost Management**: Real-time payroll insights
+  - Labor costs by department
+  - Award compliance status
+  - Overtime tracking and alerts
+  - Budget variance reporting
+
+**AI Agent Integration**:
+- **Timesheet Agent**: Auto-submits timesheets to Time Filer
+  - Syncs shift data from Core Schedule
+  - Applies correct award rates based on role and shift type
+  - Calculates leave accruals (annual leave, sick leave, etc.)
+  - Submits weekly timesheets with award compliance verified
+  - Example: "Automatically submitted your timesheet for week ending Oct 13 with 38.5 hours to Time Filer. Award rates applied, leave accrual calculated."
+- **Compliance Agent**: Monitors award compliance
+  - Verifies correct penalty rates applied
+  - Alerts to rostering that may breach award conditions
+  - Tracks maximum hours and minimum breaks
+- **Leave Management Agent**: Coordinates leave requests
+  - Integrates leave approvals with Time Filer
+  - Updates leave balances automatically
+  - Ensures rostering considers leave availability
+
+**Business Benefits**:
+- **90% reduction** in payroll corrections
+- **2-5 hours saved** per pay cycle on timesheet processing
+- **Guaranteed award compliance** with automated rate calculations
+- **Real-time visibility** into labor costs and budget tracking
+- **Elimination** of manual timesheet entry errors
+
+**Technical Integration**:
+```
+Time Filer Platform → Togo Health Integration Layer
+├── RESTful API (JSON)
+├── Automated timesheet submission (Core Schedule → Time Filer)
+├── Award interpretation engine integration
+├── Payroll system connectors (API-based)
+├── Real-time leave balance updates
+└── Webhook notifications for payroll events
+```
+
+**Award Compliance Features**:
+- **Automated Award Interpretation**:
+  - Healthcare industry awards (Nurses Award, Health Professionals Award, etc.)
+  - State-specific variations and allowances
+  - Public holiday loading calculations
+  - Overtime and penalty rate thresholds
+- **Leave Entitlements**:
+  - Annual leave accrual tracking
+  - Personal/sick leave balances
+  - Long service leave calculations
+  - Parental leave entitlements
+- **Payroll Export**:
+  - Direct integration with major payroll providers
+  - Formatted exports for manual processing
+  - Detailed audit trails for payroll verification
+
+**Data Flow Example**:
+```
+1. Clinician completes shift (tracked in Core Schedule)
+2. Timesheet Agent syncs shift data to Time Filer
+3. Time Filer applies appropriate award rates
+4. Leave accruals calculated automatically
+5. Payroll export generated for approved timesheets
+6. Clinician receives notification: "Timesheet submitted, payroll processing initiated"
+```
+
+---
+
 ## Verified Orchestration Partnership
 
 **Purpose**: Secure identity and credential verification infrastructure
@@ -328,11 +427,14 @@ User Action / Scheduled Event
 - Shift assignments (Core Schedule → Togo Health)
 - New messages (Med App → Togo Health)
 - Course enrollments (myhealthPD → Togo Health)
+- Timesheet submissions (Togo Health → Time Filer)
+- Payroll processing events (Time Filer → Togo Health)
 - Credential updates (Verified Orchestration → Togo Health)
 - Patient assignments (EMR → Togo Health)
 
 **Batch Sync** (Scheduled API calls):
-- Historical timesheet data (Core Schedule)
+- Historical timesheet data (Core Schedule, Time Filer)
+- Leave balance updates (Time Filer)
 - Training completion records (myhealthPD)
 - Staff directory updates (Med App)
 - Credential verification status (Verified Orchestration)
@@ -361,6 +463,7 @@ External Systems → API Gateway → Microservices
     ├─→ Med App Service
     ├─→ Core Schedule Service
     ├─→ myhealthPD Service
+    ├─→ Time Filer Service
     ├─→ Verified Orchestration Service
     ├─→ EMR Integration Service
     └─→ Agent Orchestration Service
@@ -440,6 +543,30 @@ CREATE TABLE learning_records (
   ce_credits DECIMAL(4,2)
 );
 
+-- Timesheet records synced to Time Filer
+CREATE TABLE timesheets (
+  id UUID PRIMARY KEY,
+  staff_id UUID REFERENCES staff(id),
+  time_filer_id VARCHAR(255),
+  week_ending DATE,
+  total_hours DECIMAL(5,2),
+  award_type VARCHAR(100),
+  status VARCHAR(50), -- submitted, approved, processed
+  submitted_at TIMESTAMP,
+  submitted_by VARCHAR(50), -- agent or user
+  award_compliance_verified BOOLEAN
+);
+
+-- Leave balances from Time Filer
+CREATE TABLE leave_balances (
+  id UUID PRIMARY KEY,
+  staff_id UUID REFERENCES staff(id),
+  leave_type VARCHAR(50), -- annual, sick, long_service
+  balance_hours DECIMAL(6,2),
+  accrual_rate DECIMAL(4,2),
+  last_updated TIMESTAMP
+);
+
 -- Agent activity logs
 CREATE TABLE agent_activities (
   id UUID PRIMARY KEY,
@@ -472,6 +599,7 @@ CREATE TABLE agent_activities (
 - Staff records: Med App is source of truth
 - Shifts: Core Schedule is source of truth
 - Learning: myhealthPD is source of truth
+- Timesheets & Payroll: Time Filer is source of truth
 - Togo Health maintains read replicas with enrichment (agent actions, preferences)
 
 ---
@@ -514,9 +642,9 @@ CloudFront (CDN) → ALB (Load Balancer) → ECS (Containers)
 ## Future Integration Roadmap
 
 ### Phase 2 Integrations
-- **Payroll Systems**: ADP, Paychex integration for timesheet export
-- **HR Systems**: Workday, BambooHR for employee lifecycle
+- **HR Systems**: Workday, BambooHR for employee lifecycle management
 - **Benefits Platforms**: Health insurance, retirement account sync
+- **Performance Management**: 360 reviews, goal tracking integration
 
 ### Phase 3 Integrations
 - **Telemedicine**: Integration for virtual shift coverage

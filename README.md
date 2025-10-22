@@ -12,7 +12,7 @@
 
 ### The Vision
 
-- **Unify**: Med App (onboarding/communications) + Core Schedule (rostering) + myhealthPD (learning/CPD)
+- **Unify**: Med App (onboarding/communications) + Core Schedule (rostering) + myhealthPD (learning/CPD) + Time Filer (payroll/award compliance)
 - **Automate**: 15 specialized AI agents handling 70% of repetitive administrative tasks
 - **Impact**: 12.5 hours/month saved per clinician, 28% reduction in burnout scores
 
@@ -78,6 +78,7 @@ Comprehensive context and technical documentation:
 - Med App integration (onboarding, communications)
 - Core Schedule integration (rostering, timesheets)
 - myhealthPD integration (LMS, CPD tracking)
+- Time Filer integration (payroll, award compliance)
 - Verified Orchestration partnership (identity, credentials)
 - EMR integration architecture (FHIR, HL7)
 - API architecture and data flow
@@ -101,7 +102,7 @@ Comprehensive context and technical documentation:
 ### For Clinicians
 
 ✅ **Automated Administrative Tasks**
-- Timesheet auto-submission (Autonomous Agent)
+- Timesheet auto-submission to Time Filer with award compliance (Autonomous Agent)
 - Credential renewal pre-filling (Human-in-the-Loop Agent)
 - Shift swap candidate matching (Human-in-the-Loop Agent)
 - Email categorization and prioritization (Autonomous Agent)
@@ -183,7 +184,7 @@ The mockups demonstrate a platform that would be built on:
 
 | Agent | Type | Function |
 |-------|------|----------|
-| **Timesheet Agent** | Autonomous | Auto-submits timesheets based on shift data |
+| **Timesheet Agent** | Autonomous | Auto-submits timesheets to Time Filer with award compliance verified |
 | **Credential Agent** | Human-in-the-Loop | Monitors license renewals, pre-fills applications |
 | **Rostering Agent** | Human-on-the-Loop | Optimizes schedules based on availability, skills, preferences |
 | **Shift Swap Agent** | Human-in-the-Loop | Matches qualified candidates for shift exchanges |
@@ -320,6 +321,7 @@ Even desktop views consider the reality of clinicians accessing data on-the-go.
 - **Med App**: Existing customer base in hospital onboarding/communications
 - **Core Schedule**: Established rostering solution with healthcare clients
 - **myhealthPD**: Operating LMS with CPD tracking for clinicians
+- **Time Filer**: Award-winning payroll and compliance platform for healthcare
 
 ### Strategic Partnership
 - **Verified Orchestration**: Exclusive healthcare identity/credential verification partnership
@@ -332,7 +334,7 @@ Even desktop views consider the reality of clinicians accessing data on-the-go.
 
 ### Early Traction (Conceptual)
 - 5 pilot hospitals in discussion (Letters of Intent)
-- Three partner companies committed to integration
+- Four partner companies committed to integration
 - Product mockups validated with CNOs and VP Operations
 
 ---
@@ -410,7 +412,7 @@ To build the actual platform, the development roadmap includes:
 **Phase 1: Foundation** (Months 1-4)
 - Authentication system (Verified Orchestration SSO)
 - Database schema and API architecture
-- Med App, Core Schedule, myhealthPD integration (read-only)
+- Med App, Core Schedule, myhealthPD, Time Filer integration (read-only)
 
 **Phase 2: Core Agents** (Months 5-8)
 - Timesheet Agent (autonomous)
