@@ -81,10 +81,21 @@ Comprehensive context and technical documentation:
 - Core Schedule integration (rostering, timesheets)
 - myhealthPD integration (LMS, CPD tracking)
 - Time Filer integration (payroll, award compliance)
+- My Digital Passport integration (knowledge graph, data portability)
 - Verified Orchestration partnership (identity, credentials)
 - EMR integration architecture (FHIR, HL7)
 - API architecture and data flow
 - Database schema and sync strategy
+
+🏗️ **[Future State Architecture](docs/FUTURE_STATE_ARCHITECTURE.md)**
+- Modern cloud-native architecture design
+- Frontend stack (React, Next.js, TypeScript)
+- Backend microservices (Node.js, GraphQL Federation)
+- AI agent orchestration (Python, LangChain, Temporal.io)
+- Integration layer (Go, gRPC)
+- Infrastructure & DevOps (Kubernetes, AWS, Terraform)
+- Security & compliance (HIPAA, SOC 2)
+- Technology stack summary and deployment timeline
 
 ### Investor Resources
 
