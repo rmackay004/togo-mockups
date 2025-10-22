@@ -260,6 +260,124 @@ Time Filer Platform → Togo Health Integration Layer
 
 ---
 
+### 5. My Digital Passport - Unified Knowledge Graph
+
+**Core Functionality**:
+- Clinician-owned professional knowledge graph
+- Unified data repository (learning, CPD, credentials, shifts, connections, rosters, hospitals, onboarding, training)
+- Shareable professional profiles
+- Data portability across healthcare organizations
+- Automatic verification and credential validation
+- Industry body data sharing
+
+**Integration Points in Togo Health**:
+
+**Clinician Dashboard**:
+- **Digital Passport Widget**: Complete professional data overview
+  - 42 credentials tracked
+  - 156 CPD hours aggregated
+  - 5 hospitals serviced
+  - 2,847 shifts completed
+  - Knowledge graph components: Learning & CPD, Credentials & Licenses, Shift History, Hospital Networks, Professional Connections, Training Records
+- **Data Ownership Messaging**:
+  - "You own your data: Share your passport with employers, industry bodies, or keep it private."
+  - "Portable across all healthcare organizations using Togo Health."
+- **Manage Passport Button**: Control sharing permissions and data visibility
+
+**Admin Dashboard**:
+- **Digital Passport Integration Overview**:
+  - 228/247 staff passports shared (92% adoption rate)
+  - 3,248 total credentials tracked across organization
+  - 18.5h average admin time saved per staff member
+- **Data Portability Benefits**:
+  - Onboarding reduced from 14 days to 2 days for new hires with existing passports
+  - Automatic verification eliminates manual credential checking
+  - Staff can move between facilities without re-verification
+
+**AI Agent Integration**:
+- **Credential Agent**: Syncs with Digital Passport for license tracking
+- **Onboarding Agent**: Imports existing passport data for new hires
+- **Compliance Agent**: Monitors Digital Passport for expiring credentials
+- **LMS Agent**: Recommends courses based on passport learning history
+
+**Business Benefits**:
+- **Reduced onboarding time**: From 14 days to 2 days (86% faster)
+- **Eliminated duplicate data entry**: Staff enter credentials once, use everywhere
+- **Increased staff satisfaction**: Clinicians own and control their professional data
+- **Network effects**: More hospitals using Digital Passport = more valuable for clinicians
+- **Competitive advantage**: Attract staff who value data portability
+
+**Technical Integration**:
+```
+My Digital Passport Platform → Togo Health Integration Layer
+├── RESTful API (JSON) for knowledge graph queries
+├── OAuth 2.0 for secure data sharing authorization
+├── GraphQL for flexible data retrieval
+├── Webhook notifications for credential updates
+├── Blockchain-backed verification ledger
+└── Privacy-preserving selective attribute disclosure
+```
+
+**Data Schema Example**:
+```json
+{
+  "passportId": "mdp_abc123",
+  "clinicianId": "sarah.chen@example.com",
+  "sharingPermissions": {
+    "stMarysHospital": {
+      "granted": true,
+      "scope": ["credentials", "learning", "shifts"],
+      "expiresAt": "2026-10-17T00:00:00Z"
+    }
+  },
+  "knowledgeGraph": {
+    "credentials": [
+      {
+        "type": "RN_LICENSE",
+        "issuingBody": "NSW Nursing Board",
+        "licenseNumber": "NUR12345",
+        "issueDate": "2018-03-15",
+        "expiryDate": "2026-03-15",
+        "verified": true,
+        "verifiedAt": "2025-10-10T09:23:12Z"
+      }
+    ],
+    "learning": {
+      "cpdHours": 156,
+      "courses": [
+        {
+          "name": "Advanced Wound Care",
+          "provider": "myhealthPD",
+          "completedDate": "2025-08-12",
+          "ceCredits": 2.5
+        }
+      ]
+    },
+    "shifts": {
+      "totalCompleted": 2847,
+      "hospitals": ["St. Mary's", "City General", "Regional Medical Center", "Metro Health", "Community Hospital"],
+      "specialties": ["Emergency Medicine", "ICU", "Med-Surg"]
+    }
+  }
+}
+```
+
+**Privacy & Security**:
+- Clinician-controlled sharing permissions (granular consent)
+- Time-limited access grants (e.g., employment duration only)
+- Selective attribute disclosure (share only what's needed)
+- Audit trail of all data access
+- GDPR and HIPAA compliant
+- Right to data portability and deletion
+
+**Use Cases**:
+1. **New Hospital Onboarding**: Clinician shares existing Digital Passport → Hospital verifies credentials automatically → Onboarding time reduced from 14 days to 2 days
+2. **Credential Renewal**: Digital Passport tracks expiration → Alerts sent 60 days before expiry → Auto-books renewal courses via myhealthPD
+3. **Professional Portfolio**: Clinician applies to new position → Shares Digital Passport with prospective employer → Complete work history, credentials, and learning visible instantly
+4. **Industry Body Reporting**: Annual CPD requirements → Digital Passport exports certified CPD summary → Submit to nursing board with one click
+
+---
+
 ## Verified Orchestration Partnership
 
 **Purpose**: Secure identity and credential verification infrastructure

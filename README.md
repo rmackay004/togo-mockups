@@ -12,13 +12,15 @@
 
 ### The Vision
 
-- **Unify**: Med App (onboarding/communications) + Core Schedule (rostering) + myhealthPD (learning/CPD) + Time Filer (payroll/award compliance)
+- **Unify**: Med App (onboarding/communications) + Core Schedule (rostering) + myhealthPD (learning/CPD) + Time Filer (payroll/award compliance) + My Digital Passport (unified knowledge graph)
 - **Automate**: 15 specialized AI agents handling 70% of repetitive administrative tasks
 - **Impact**: 12.5 hours/month saved per clinician, 28% reduction in burnout scores
+- **Empower**: Clinicians own and control their professional data via Digital Passport, shareable across healthcare organizations
 
-### Strategic Partnership
+### Strategic Partnerships
 
-Powered by **Verified Orchestration** for secure identity management and credential verification across healthcare organizations.
+- **Verified Orchestration**: Secure identity management and credential verification across healthcare organizations
+- **My Digital Passport**: Unified knowledge graph for clinician-owned professional data (learning, CPD, credentials, shifts, connections, rosters, onboarding, training)
 
 ---
 
@@ -322,15 +324,18 @@ Even desktop views consider the reality of clinicians accessing data on-the-go.
 - **Core Schedule**: Established rostering solution with healthcare clients
 - **myhealthPD**: Operating LMS with CPD tracking for clinicians
 - **Time Filer**: Award-winning payroll and compliance platform for healthcare
+- **My Digital Passport**: Unified professional knowledge graph - clinician-owned, portable data
 
-### Strategic Partnership
+### Strategic Partnerships
 - **Verified Orchestration**: Exclusive healthcare identity/credential verification partnership
+- **My Digital Passport**: Integration for portable, clinician-controlled professional data across organizations
 
 ### Technology Moats
 1. **Multi-agent orchestration IP**: Proprietary workflow patterns and coordination logic
 2. **Data network effects**: Agent recommendations improve with scale
 3. **Integration depth**: Epic/Cerner certified, FHIR-compliant
 4. **Regulatory compliance**: HIPAA infrastructure, state nursing regulations encoded
+5. **Data portability**: My Digital Passport integration creates clinician-owned knowledge graphs, reducing onboarding from 14 days to 2 days
 
 ### Early Traction (Conceptual)
 - 5 pilot hospitals in discussion (Letters of Intent)
