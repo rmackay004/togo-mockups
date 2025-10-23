@@ -97,6 +97,16 @@ Comprehensive context and technical documentation:
 - Security & compliance (HIPAA, SOC 2)
 - Technology stack summary and deployment timeline
 
+📱 **[Mobile Architecture](docs/MOBILE_ARCHITECTURE.md)**
+- React Native + Expo (recommended approach)
+- Native iOS (Swift + SwiftUI) alternative
+- Native Android (Kotlin + Jetpack Compose) alternative
+- Offline-first architecture with WatermelonDB
+- Biometric authentication + Verified Orchestration SSO
+- Real-time updates with WebSocket
+- Push notifications and background tasks
+- Performance optimization and testing strategy
+
 ### Investor Resources
 
 💼 **[Investor Presentation Guide](docs/INVESTOR_PRESENTATION_GUIDE.md)**
